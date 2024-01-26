@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express';
 const app = express()
 app.use(express.json()); 
 
@@ -10,4 +10,6 @@ app.get('/index', function (req, res) {
   res.send('Hello World')
 })
 
-app.listen(3000)
+app.listen(4000, () => {
+  console.log('Example app listening on port 4000!')
+})
